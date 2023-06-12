@@ -12,7 +12,7 @@ public class RoutePoint : MonoBehaviour
     {
         if (isActiveForPlayer)
         {
-            if (other.tag == "Players")
+            if (other.tag == "Player")
             {
                 model.SetActive(false);
                 isActiveForPlayer = false;
