@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Stopwatch : MonoBehaviour
 {
     public float seconds;
     public float minutes;
+    public TextMeshProUGUI stopwatch;
 
     public bool hasFinished;
 
@@ -21,6 +23,7 @@ public class Stopwatch : MonoBehaviour
             }
             int m = Mathf.RoundToInt(minutes);
             int s = Mathf.RoundToInt(seconds);
+            stopwatch.text = m + ":" + s;
         }
     }
 }
